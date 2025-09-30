@@ -1,0 +1,17 @@
+{
+  "chatgpt": ["gpt-5", "gpt-5-mini", "gpt-5-nano", "gpt-5-chat-latest"],
+  "mistralai": ["mistral-small-latest", "mistral-medium-latest", "mistral-large-latest"],
+  "claude": ["claude-sonnet-4-5-20250929", "claude-opus-4-1", "claude-sonnet-4"],
+  "display_names": {
+    "gpt-5": "GPT-5 – Puissant et polyvalent, idéal pour tâches complexes",
+    "gpt-5-mini": "GPT-5 Mini – Rapide et léger, parfait pour réponses courtes",
+    "gpt-5-nano": "GPT-5 Nano – Ultra-rapide, pour textes très courts et simples",
+    "gpt-5-chat-latest": "GPT-5 Chat – Optimisé pour conversation naturelle",
+    "mistral-small-latest": "Mistral Small – Léger et rapide, usage simple",
+    "mistral-medium-latest": "Mistral Medium – Équilibre entre vitesse et puissance",
+    "mistral-large-latest": "Mistral Large – Très puissant, idéal pour gros textes",
+    "claude-sonnet-4-5-20250929": "Claude Sonnet 4.5 – Le plus intelligent, excellent pour édition",
+    "claude-opus-4-1": "Claude Opus 4.1 – Très puissant, tâches complexes",
+    "claude-sonnet-4": "Claude Sonnet 4 – Équilibré et performant"
+  }
+}
