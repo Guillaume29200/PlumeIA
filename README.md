@@ -40,7 +40,7 @@ Avec PlumeIA, vous pouvez :
 
 <h4>⚙️ Configuration & API Keys</h4>
 
-Pour fonctionner, PlumeIA nécessite de renseigner vos clés API dans le fichier ia-config.php disponible dans le repertoire /config/ :
+Pour fonctionner, PlumeIA nécessite de renseigner vos clés API dans le fichier <b>ia-config.php</b> disponible dans le repertoire <b>/config/</b> :
 
 <pre>
 <?php
