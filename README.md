@@ -38,3 +38,49 @@ Avec PlumeIA, vous pouvez :
 - Améliorer la mise en page de vos articles avec l’option mise en forme automatique
 - Traduire vos textes ou pages en multilingue, simplement et efficacement
 
+<h4>⚙️ Configuration & API Keys</h4>
+
+Pour fonctionner, PlumeIA nécessite de renseigner vos clés API dans le fichier ia-config.php disponible dans le repertoire /config/ :
+
+<pre>
+<?php
+return [
+    // Provider par défaut "chatgpt" ou "mistralai"
+    "default_provider" => "mistralai",
+
+    // Liste des providers disponibles
+    "providers" => [
+        "mistralai" => [
+            "api_key" => "CLE_MISTRAL_ICI"
+        ],
+        "chatgpt" => [
+            "api_key" => "CLE_OPENAI_ICI"
+        ],
+        "claude" => [
+            "api_key" => "sk-ant-api03-VOTRE_CLE_ICI"
+        ],
+    ]
+];
+</pre>
+
+<h4>🔑 Où obtenir vos clés API ?</h4>
+
+<ul>
+  <li>
+    <a href="https://console.mistral.ai/" target="_blank" rel="noopener noreferrer">Mistral AI — console.mistral.ai</a>
+    <small class="text-muted"> (accès gratuit / console)</small>
+  </li>
+  <li>
+    <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener noreferrer">OpenAI — platform.openai.com/api-keys</a>
+    <small class="text-muted"> (création de clé API — service payant)</small>
+  </li>
+  <li>
+    <a href="https://console.anthropic.com/" target="_blank" rel="noopener noreferrer">Anthropic (Claude) — console.anthropic.com</a>
+    <small class="text-muted"> (création de clé API — service payant)</small>
+  </li>
+</ul>
+
+<h4>💰 Gratuit vs Payant</h4>
+
+- MistralAI : actuellement gratuit (aucun dépôt requis).
+- OpenAI (ChatGPT) et Anthropic (Claude) : payants, avec un dépôt minimum de 5 $ pour activer les clés API.
