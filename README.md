@@ -1,3 +1,6 @@
+<center><h3>/!\ATTENTION NE PAS UTILISER POUR LE MOMENT/!\</h3></center>
+<hr />
+
 ## 🪶 PlumeIA – Votre plume numérique intelligente
 
 PlumeIA est un module **WYSIWYG d’assistance à l’écriture basé sur l’intelligence artificielle**.  
