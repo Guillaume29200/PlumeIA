@@ -29,7 +29,8 @@ PlumeIA est actuellement compatible avec :
 PlumeIA intègre toutes les fonctions essentielles d’un éditeur moderne :  
 
 - Gestion typographique  
-- Styles & effets : citation, surbrillance, spoiler, code (préformaté)  
+- Styles & effets : citation, surbrillance, spoiler
+- Véritable éditeur de code digne de VSCode !
 - Alignement du texte  
 - Gestion des émojis  
 - Insertion de médias : vidéos (YouTube, Facebook, TikTok), images, URL  
