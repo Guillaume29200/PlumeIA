@@ -3,96 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta name="description" content="Éditeur WYSIWYG avec intégration IA multi-providers">
-		<title>Éditeur texte IA — Powered by eSport-CMS</title>
+		<meta name="description" content="PlumeAI Éditeur WYSIWYG avec intégration IA multi-providers">
+		<title>PlumeAI - Éditeur texte IA — Powered by eSport-CMS</title>
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<!-- Prism.js pour coloration syntaxique -->
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
-		<style>
-			:root {
-				--primary-color: #0d6efd;
-				--bg-light: #f7f8fa;
-				--border-color: #e0e6ee;
-				--shadow-focus: rgba(13,110,253,0.06);
-			}
-			body { 
-				background: var(--bg-light); 
-				font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif; 
-				padding: 18px; 
-			}
-			.container { 
-				max-width: 1100px; 
-				margin: auto; 
-			}
-			#toolbar { 
-				display: flex; 
-				flex-wrap: wrap; 
-				gap: 6px; 
-				margin-bottom: 8px; 
-				align-items: center; 
-				background: #fff;
-				padding: 10px;
-				border-radius: 8px;
-				border: 1px solid var(--border-color);
-			}
-			#editor-container { 
-				min-height: 300px; 
-				border: 1px solid var(--border-color); 
-				padding: 14px; 
-				border-radius: 8px; 
-				background: #fff; 
-				outline: none;
-				line-height: 1.6;
-			}
-			#editor-container[contenteditable="true"]:focus { 
-				box-shadow: 0 0 0 3px var(--shadow-focus); 
-				border-color: var(--primary-color); 
-			}
-			#preview { 
-				display: none; 
-				min-height: 200px; 
-				border-radius: 8px; 
-				padding: 14px; 
-				background: #f1f9ff; 
-				border: 1px solid #cfe8ff; 
-				margin-top: 10px; 
-			}
-			#iaOutput { 
-				white-space: pre-wrap; 
-				max-height: 320px; 
-				overflow: auto; 
-				background: #fff; 
-				padding: 12px; 
-				border-radius: 6px; 
-				border: 1px solid #ddd;
-				line-height: 1.6; 
-			}
-			.spinner-border-sm { 
-				width: 1rem; 
-				height: 1rem; 
-			}
-			/* Responsive toolbar */
-			@media (max-width: 768px) {
-				#toolbar {
-					gap: 4px;
-				}
-				.form-select-sm {
-					font-size: 0.8rem;
-				}
-			}
-			/* Accessibility */
-			.btn:focus-visible {
-				outline: 2px solid var(--primary-color);
-				outline-offset: 2px;
-			}
-		</style>
+		<!-- Thème général de plumeAI -->
+		<link href="style/theme.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
 			<!-- Header -->
 			<header class="d-flex justify-content-between align-items-center mb-3">
-				<h1 class="h4 mb-0">Éditeur WYSIWYG avec IA</h1>
+				<h1 class="h4 mb-0">PlumeAI</h1>
 				<small class="text-muted">Multi-providers : OpenAI, Mistral, Claude</small>
 			</header>
 
@@ -114,7 +38,19 @@
 					<option value="H5">Titre H5</option>
 					<option value="H6">Titre H6</option>
 				</select>
-				
+				<select id="font-picker" class="form-select form-select-sm" style="width:100px;" aria-label="Outils de police d'ecriture">
+					<option value="">Police</option>
+					<option value="Inter, sans-serif" style="font-family: Inter, sans-serif;">Inter (par défaut)</option>
+					<option value="Poppins, sans-serif" style="font-family: Poppins, sans-serif;">Poppins</option>
+					<option value="Nunito, sans-serif" style="font-family: Nunito, sans-serif;">Nunito</option>
+					<option value="Montserrat, sans-serif" style="font-family: Montserrat, sans-serif;">Montserrat</option>
+					<option value="'Playfair Display', serif" style="font-family: 'Playfair Display', serif;">Playfair Display</option>
+					<option value="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Courier New</option>
+					<option value="Roboto, sans-serif" style="font-family: Roboto, sans-serif;">Roboto</option>
+					<option value="Lato, sans-serif" style="font-family: Lato, sans-serif;">Lato</option>
+					<option value="Raleway, sans-serif" style="font-family: Raleway, sans-serif;">Raleway</option>
+					<option value="Merriweather, serif" style="font-family: Merriweather, serif;">Merriweather</option>
+				</select>				
 				<select id="style-tools" class="form-select form-select-sm" style="width:130px;" aria-label="Styles et effets">
 					<option value="">Styles / Effets</option>
 					<option value="BLOCKQUOTE">Citation</option>
@@ -167,12 +103,12 @@
 
 		<!-- Modal IA -->
 		<?php 
-		$modalPath = __DIR__ . '/modal.php';
-		if (file_exists($modalPath)) {
-			include $modalPath;
-		} else {
-			echo '<!-- Erreur : modal.php introuvable -->';
-		}
+			$modalPath = __DIR__ . '/modal.php';
+			if (file_exists($modalPath)) {
+				include $modalPath;
+			} else {
+				echo '<!-- Erreur : modal.php introuvable -->';
+			}
 		?>
 
 		<!-- Bootstrap JS -->

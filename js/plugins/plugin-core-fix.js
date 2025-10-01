@@ -1,6 +1,7 @@
 // js/plugins/plugin-core-fix.js
 // Corrige le comportement par défaut des éditeurs contenteditable
 // qui créent des <h2>, <div>, ou autres balises indésirables au démarrage
+// Derniere update le 01/10/2025
 registerPlugin({
     name: "core-fix-empty-block",
     init({editor}) {

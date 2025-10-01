@@ -1,4 +1,6 @@
 // js/plugins/plugin-ia.js
+// Plugin complet permettant de contacter les divers providers
+// Derniere update le 30/09/2025
 registerPlugin({
     name: "ia",
     init({editor, state, currentProvider}) {

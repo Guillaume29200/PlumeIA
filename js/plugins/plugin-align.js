@@ -1,5 +1,6 @@
 // js/plugins/plugin-align.js
 // Permet l'alignement de texte : gauche, centre, droite, justifié
+// Derniere update le 01/10/2025
 registerPlugin({
     name: "align",
     init({editor}) {
