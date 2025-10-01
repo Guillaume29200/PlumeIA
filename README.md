@@ -57,7 +57,7 @@ Pour fonctionner, PlumeIA nécessite de renseigner vos clés API dans le fichier
 ```php
 <?php
 return [
-    // Provider par défaut "chatgpt" ou "mistralai"
+    // Provider par défaut "chatgpt" , "mistralai" ou "claude"
     "default_provider" => "mistralai",
 
     // Liste des providers disponibles
@@ -69,7 +69,7 @@ return [
             "api_key" => "CLE_OPENAI_ICI"
         ],
         "claude" => [
-            "api_key" => "sk-ant-api03-VOTRE_CLE_ICI"
+            "api_key" => "CLE_CLAUDE_ICI"
         ],
     ]
 ];
