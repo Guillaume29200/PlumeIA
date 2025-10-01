@@ -86,3 +86,12 @@ return [
 
 - **MistralAI** : actuellement **gratuit** (aucun dépôt requis).  
 - **OpenAI (ChatGPT)** et **Anthropic (Claude)** : **payants** — un dépôt initial (par exemple ~5 $) peut être demandé pour activer la facturation ; vérifiez les conditions et tarifs sur leurs consoles respectives.
+
+## 🧑‍💻 Auteur
+Développé par **Guillaume R.** dans le cadre de eSport-CMS/GameServer Hub.
+
+🖥️ [https://esport-cms.net](https://esport-cms.net)
+
+---
+
+> Libre d'utilisation, adaptation et redistribution. Pas besoin de crédit, mais ça fait toujours plaisir. 😉
