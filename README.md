@@ -120,7 +120,10 @@ PlumeIA est distribué sous la licence GPL-3.0. Cela signifie que :
 
 ⚠️ <b>Propriété :</b> PlumeIA est développé et maintenu par <b>Guillaume R.</b> Vous êtes libre de créer des plugins, des extensions ou des modifications, mais l’éditeur principal reste la propriété de son auteur.
 
-💡 Une documentation pour la création de plugins sera bientôt disponible pour permettre aux développeurs de contribuer facilement sans toucher au cœur de l’éditeur.
+## 💡 Développement & Wiki
+
+> Vous souhaitez en apprendre plus sur **PlumeIA** 🪶  Comprendre son développement ou créer vos propres plugins ?  
+> 👉 [Rendez-vous sur la Wiki officielle](https://github.com/Guillaume29200/PlumeIA/wiki)
 
 ## 🧑‍💻 Auteur
 Développé par **Guillaume R.** dans le cadre de eSport-CMS/GameServer Hub.
