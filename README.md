@@ -1,6 +1,12 @@
 <center><h3>/!\ATTENTION NE PAS UTILISER POUR LE MOMENT/!\</h3></center>
 <hr />
 
+<p align="center">
+  <img src="https://logo.svgcdn.com/l/mistral-ai-8x.png" width="150" alt="Mistral AI" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/1280px-Claude_AI_logo.svg.png" width="150" alt="Claude AI" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/2560px-OpenAI_Logo.svg.png" width="150" alt="OpenAI" />
+</p>
+
 ## 🪶 PlumeIA – Votre plume numérique intelligente
 
 PlumeIA est un module **WYSIWYG d’assistance à l’écriture basé sur l’intelligence artificielle**.  
@@ -13,12 +19,6 @@ Il vous accompagne dans vos créations en vous proposant :
 
 Que vous soyez **rédacteur, développeur ou simple utilisateur**, PlumeIA vous apporte une écriture fluide, précise et créative, optimisée par la puissance des modèles d’IA modernes.  
 
----
-<p align="center">
-  <img src="https://logo.svgcdn.com/l/mistral-ai-8x.png" width="150" alt="Mistral AI" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/1280px-Claude_AI_logo.svg.png" width="150" alt="Claude AI" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/2560px-OpenAI_Logo.svg.png" width="150" alt="OpenAI" />
-</p>
 ---
 
 ## ✅ Compatibilité
