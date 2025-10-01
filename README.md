@@ -56,6 +56,22 @@ Avec PlumeIA, vous pouvez :
 
 ---
 
+## 🤖 Comparatif des providers IA de PlumeIA
+
+PlumeIA intègre plusieurs fournisseurs IA pour générer du contenu, corriger ou traduire du texte. Voici un aperçu comparatif des fonctionnalités principales :
+
+| Fonctionnalité           | MistralAI                     | Claude                       | OpenAI                        |
+|---------------------------|-------------------------------|-------------------------------|-------------------------------|
+| **Génération de texte**    | ✅ Très bonne fluidité, style naturel | ✅ Très cohérent, adapté à la rédaction | ✅ Polyvalent, plus créatif et flexible |
+| **Génération HTML**        | ✅ Bon pour snippets simples | ⚠️ Limitée aux structures simples | ✅ Excellente pour HTML complet et propre |
+| **Correction / Relecture** | ✅ Orthographe et style correct | ✅ Très précis pour la grammaire | ✅ Très complet, peut reformuler et améliorer |
+| **Traduction**             | ⚠️ Basique, parfois approximative | ✅ Bonne traduction, style naturel | ✅ Traductions précises et idiomatiques |
+| **Vitesse**               | Rapide                        | Moyenne                       | Rapide selon modèle choisi     |
+| **Accessibilité / API**    | Libre / Open-source           | Sur inscription / API         | Sur abonnement / API           |
+
+> ⚡ Astuce : choisissez le provider en fonction de votre tâche. Pour HTML complexe ou traduction précise, OpenAI reste le plus fiable. Pour un usage léger et gratuit, MistralAI fait parfaitement l’affaire. Claude est idéal pour la rédaction et la correction de texte.
+
+
 ## ⚙️ Configuration & API Keys
 
 Pour fonctionner, PlumeIA nécessite de renseigner vos clés API dans le fichier **`/config/ia-config.php`** :  
