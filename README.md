@@ -93,6 +93,19 @@ return [
 - **MistralAI** : actuellement **gratuit** (aucun dépôt requis).  
 - **OpenAI (ChatGPT)** et **Anthropic (Claude)** : **payants** — un dépôt initial (par exemple ~5 $) peut être demandé pour activer la facturation ; vérifiez les conditions et tarifs sur leurs consoles respectives.
 
+## 📜 Licence & utilisation
+
+PlumeIA est distribué sous la licence GPL-3.0. Cela signifie que :
+
+- Vous pouvez utiliser, copier, modifier et partager PlumeIA gratuitement.
+- Vous ne pouvez pas revendiquer PlumeIA comme votre création ni le vendre sous votre nom.
+- Si vous modifiez PlumeIA et le redistribuez, les modifications doivent rester libres sous GPL-3.0.
+- Aucune garantie n’est fournie : utilisez PlumeIA à vos risques et périls.
+
+⚠️ <b>Propriété :</b> PlumeIA est développé et maintenu par <b>Guillaume R.</b> Vous êtes libre de créer des plugins, des extensions ou des modifications, mais l’éditeur principal reste la propriété de son auteur.
+
+💡 Une documentation pour la création de plugins sera bientôt disponible pour permettre aux développeurs de contribuer facilement sans toucher au cœur de l’éditeur.
+
 ## 🧑‍💻 Auteur
 Développé par **Guillaume R.** dans le cadre de eSport-CMS/GameServer Hub.
 
