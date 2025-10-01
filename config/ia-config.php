@@ -1,12 +1,12 @@
 <?php
 return [
-    // Provider par défaut "chatgpt" ou "mistralai"
+    // Provider par défaut "chatgpt" ou "mistralai" ou "claude"
     "default_provider" => "mistralai",
 
     // Liste des providers disponibles
     "providers" => [
         "mistralai" => [
-            "api_key" => "VOTE-CLES"
+            "api_key" => "GM8Wg76TvloJ9kwXgBcFto1tffdBt2L0"
         ],
         "chatgpt" => [
             "api_key" => "CLE_OPENAI_ICI"
