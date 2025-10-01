@@ -1,0 +1,114 @@
+			:root {
+				--primary-color: #0d6efd;
+				--bg-light: #f7f8fa;
+				--border-color: #e0e6ee;
+				--shadow-focus: rgba(13,110,253,0.06);
+			}
+			body { 
+				background: var(--bg-light); 
+				font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif; 
+				padding: 18px; 
+			}
+			.container { 
+				max-width: 1100px; 
+				margin: auto; 
+			}
+			#toolbar { 
+				display: flex; 
+				flex-wrap: wrap; 
+				gap: 6px; 
+				margin-bottom: 8px; 
+				align-items: center; 
+				background: #fff;
+				padding: 10px;
+				border-radius: 8px;
+				border: 1px solid var(--border-color);
+			}
+			#editor-container { 
+				min-height: 300px; 
+				border: 1px solid var(--border-color); 
+				padding: 14px; 
+				border-radius: 8px; 
+				background: #fff; 
+				outline: none;
+				line-height: 1.6;
+			}
+			#editor-container[contenteditable="true"]:focus { 
+				box-shadow: 0 0 0 3px var(--shadow-focus); 
+				border-color: var(--primary-color); 
+			}
+			#preview { 
+				display: none; 
+				min-height: 200px; 
+				border-radius: 8px; 
+				padding: 14px; 
+				background: #f1f9ff; 
+				border: 1px solid #cfe8ff; 
+				margin-top: 10px; 
+			}
+			#iaOutput { 
+				white-space: pre-wrap; 
+				max-height: 320px; 
+				overflow: auto; 
+				background: #fff; 
+				padding: 12px; 
+				border-radius: 6px; 
+				border: 1px solid #ddd;
+				line-height: 1.6; 
+			}
+			.spinner-border-sm { 
+				width: 1rem; 
+				height: 1rem; 
+			}
+			/* Responsive toolbar */
+			@media (max-width: 768px) {
+				#toolbar {
+					gap: 4px;
+				}
+				.form-select-sm {
+					font-size: 0.8rem;
+				}
+			}
+			/* Accessibility */
+			.btn:focus-visible {
+				outline: 2px solid var(--primary-color);
+				outline-offset: 2px;
+			}
+			
+			/* Supprimer les rectangles de fond sur chaque ligne */
+			pre[class*="language-"] {
+				background: transparent !important; /* pas de fond intrusif */
+				box-shadow: none !important;
+			}
+
+			/* Garder seulement ton fond sombre uniforme */
+			#editor-container pre {
+				background: #1e1e1e !important;
+				margin: 0;
+				padding: 12px;
+				border-radius: 8px;
+				overflow-x: auto;
+			}
+
+			/* Assurer lisibilité */
+			#editor-container code {
+				background: none !important;
+				color: #ddd;
+				font-family: monospace;
+				font-size: 14px;
+				line-height: 1.5;
+				white-space: pre;
+			}	
+			/* Couleur de sélection personnalisée dans les blocs de code */
+			#editor-container pre::selection,
+			#editor-container code::selection {
+				background: rgba(56, 139, 253, 0.35); /* bleu VSCode-like */
+				color: #fff; /* texte lisible */
+			}
+
+			/* Certains navigateurs (Firefox) nécessitent ::-moz-selection */
+			#editor-container pre::-moz-selection,
+			#editor-container code::-moz-selection {
+				background: rgba(56, 139, 253, 0.35);
+				color: #fff;
+			}
