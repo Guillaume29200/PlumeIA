@@ -1,7 +1,7 @@
 // js/plugins/plugin-emojis.js
 // Charge les emojis depuis config/emojis.json et propose deux interfaces
-// Version 2.0 - Amélioration avec catégories, recherche, et récents
-// Derniere update : 01/10/2025
+// Version 3.0 - Amélioration avec catégories, recherche, et récents
+// Dernière update le : 02/10/2025
 registerPlugin({
     name: "emojis",
     init({editor}) {
@@ -159,6 +159,7 @@ registerPlugin({
 
             container.innerHTML = '';
             container.className = 'emoji-picker-container';
+            container.style.display = 'none'; // Caché par défaut
 
             // Créer la barre de recherche
             const searchBar = createSearchBar();
@@ -177,8 +178,72 @@ registerPlugin({
             // Afficher les récents par défaut
             displayCategory('recent');
 
+            // Gérer le bouton toggle
+            setupToggleButton();
+
             // Styles CSS
             injectStyles();
+        }
+
+		/**
+		 * Configure le bouton de toggle
+		 */
+		function setupToggleButton() {
+			// Attendre que l'éditeur soit prêt
+			const initToggle = () => {
+				const toggleBtn = document.getElementById('toggle-emoji-picker');
+				const container = document.getElementById('emoji-container');
+				
+				if(!toggleBtn || !container) {
+					console.warn('[plugin-emojis] Bouton toggle ou container introuvable');
+					return;
+				}
+
+				console.log('[plugin-emojis] Configuration du toggle button');
+
+				toggleBtn.addEventListener('click', (e) => {
+					e.stopPropagation();
+					const isVisible = container.style.display !== 'none';
+					container.style.display = isVisible ? 'none' : 'block';
+					
+					console.log('[plugin-emojis] Toggle:', isVisible ? 'fermé' : 'ouvert');
+					
+					// Fermer si on clique ailleurs
+					if(!isVisible) {
+						setTimeout(() => {
+							document.addEventListener('click', closeOnClickOutside);
+						}, 100);
+					}
+				});
+
+				// Empêcher la fermeture si on clique dans le picker
+				container.addEventListener('click', (e) => {
+					e.stopPropagation();
+				});
+			};
+
+			// Si editorReady déjà déclenché
+			if(window.editorState?.isInitialized) {
+				initToggle();
+			} else {
+				// Sinon attendre l'événement
+				window.addEventListener('editorReady', initToggle);
+			}
+		}
+
+        /**
+         * Ferme le picker si on clique en dehors
+         */
+        function closeOnClickOutside(e) {
+            const container = document.getElementById('emoji-container');
+            const toggleBtn = document.getElementById('toggle-emoji-picker');
+            
+            if(!container || !toggleBtn) return;
+            
+            if(!container.contains(e.target) && e.target !== toggleBtn) {
+                container.style.display = 'none';
+                document.removeEventListener('click', closeOnClickOutside);
+            }
         }
 
         /**
@@ -447,11 +512,15 @@ registerPlugin({
             style.id = 'emoji-picker-styles';
             style.textContent = `
                 .emoji-picker-container {
+                    position: absolute;
+                    z-index: 1000;
                     border: 1px solid #dee2e6;
                     border-radius: 8px;
                     background: #fff;
                     padding: 8px;
                     max-width: 400px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    margin-top: 4px;
                 }
                 .emoji-search-wrapper {
                     margin-bottom: 8px;
