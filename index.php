@@ -66,10 +66,7 @@
 					<option value="right">Droite</option>
 					<option value="justify">Justifié</option>
 				</select>
-				
-				<select id="emoji-select" class="form-select form-select-sm" style="width:96px;" aria-label="Sélection d'emoji">
-					<option value="">Emojis</option>
-				</select>
+				<button id="toggle-emoji-picker" type="button" class="btn btn-light btn-sm" title="Ouvrir les emojis">😊</button>
 				
 				<button type="button" class="btn btn-light btn-sm" data-command="insertVideo" title="Insérer une vidéo" aria-label="Vidéo">🎬</button>
 				<button type="button" class="btn btn-light btn-sm" data-command="createLink" title="Créer un lien" aria-label="Lien">🔗</button>
@@ -100,7 +97,6 @@
 			<!-- Résultat IA rapide -->
 			<div id="iaResult" class="mt-3" aria-live="polite"></div>
 		</div>
-
 		<!-- Modal IA -->
 		<?php 
 			$modalPath = __DIR__ . '/modal.php';
@@ -110,7 +106,8 @@
 				echo '<!-- Erreur : modal.php introuvable -->';
 			}
 		?>
-
+		<!-- Modal Emoji -->
+		<div id="emoji-container"></div>
 		<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 		
