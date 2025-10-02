@@ -112,3 +112,15 @@
 				background: rgba(56, 139, 253, 0.35);
 				color: #fff;
 			}
+			/* Emplacement du block des emoji en bas à droite de l'ecran */
+			#emoji-container {
+			  position: fixed;
+			  bottom: 20px;   /* distance depuis le bas */
+			  right: 20px;    /* distance depuis la droite */
+			  z-index: 9999;  /* au-dessus du reste */
+			  background: #fff;  /* optionnel, pour qu’on voie bien */
+			  border: 1px solid #ccc;
+			  border-radius: 10px;
+			  padding: 10px;
+			  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+			}			
