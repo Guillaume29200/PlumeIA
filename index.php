@@ -68,13 +68,13 @@
 				</select>
 				<button id="toggle-emoji-picker" type="button" class="btn btn-light btn-sm" title="Ouvrir les emojis">😊</button>
 				
-				<button type="button" class="btn btn-light btn-sm" data-command="insertVideo" title="Insérer une vidéo" aria-label="Vidéo">🎬</button>
-				<button type="button" class="btn btn-light btn-sm" data-command="createLink" title="Créer un lien" aria-label="Lien">🔗</button>
-				<button type="button" class="btn btn-light btn-sm" data-command="insertImage" title="Insérer une image" aria-label="Image">🖼️</button>
+				<button type="button" class="btn btn-light btn-sm" data-command="insertVideo" title="Insérer une vidéo">🎬</button>
+				<button type="button" class="btn btn-light btn-sm" data-command="createLink" title="Créer un lien">🔗</button>
+				<button type="button" class="btn btn-light btn-sm" data-command="insertImage" title="Insérer une image">🖼️</button>
 				
-				<button id="preview-toggle" type="button" class="btn btn-info btn-sm ms-auto" aria-label="Basculer l'aperçu">👀 Preview</button>
-				<button id="dev-toggle" type="button" class="btn btn-warning btn-sm" aria-label="Mode développeur">🛠️ Dev</button>
-				<button id="btnIA" type="button" class="btn btn-primary btn-sm ms-2" aria-label="Ouvrir l'assistance IA">🤖 Assistance IA</button>
+				<button id="preview-toggle" type="button" class="btn btn-info btn-sm ms-auto">👀 Preview</button>
+				<button id="dev-toggle" type="button" class="btn btn-warning btn-sm">🛠️ Dev</button>
+				<button id="btnIA" type="button" class="btn btn-primary btn-sm ms-2">🤖 Assistance IA</button>
 			</nav>
 
 			<!-- Éditeur contenteditable -->
