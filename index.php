@@ -38,27 +38,16 @@
 					<option value="H5">Titre H5</option>
 					<option value="H6">Titre H6</option>
 				</select>
-				<select id="font-picker" class="form-select form-select-sm" style="width:100px;" aria-label="Outils de police d'ecriture">
+				<select id="font-picker" class="form-select form-select-sm" style="width:100px;" aria-label="Choix de la police">
 					<option value="">Police</option>
-					<option value="Inter, sans-serif" style="font-family: Inter, sans-serif;">Inter (par défaut)</option>
-					<option value="Poppins, sans-serif" style="font-family: Poppins, sans-serif;">Poppins</option>
-					<option value="Nunito, sans-serif" style="font-family: Nunito, sans-serif;">Nunito</option>
-					<option value="Montserrat, sans-serif" style="font-family: Montserrat, sans-serif;">Montserrat</option>
-					<option value="'Playfair Display', serif" style="font-family: 'Playfair Display', serif;">Playfair Display</option>
-					<option value="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Courier New</option>
-					<option value="Roboto, sans-serif" style="font-family: Roboto, sans-serif;">Roboto</option>
-					<option value="Lato, sans-serif" style="font-family: Lato, sans-serif;">Lato</option>
-					<option value="Raleway, sans-serif" style="font-family: Raleway, sans-serif;">Raleway</option>
-					<option value="Merriweather, serif" style="font-family: Merriweather, serif;">Merriweather</option>
 				</select>				
 				<select id="style-tools" class="form-select form-select-sm" style="width:130px;" aria-label="Styles et effets">
 					<option value="">Styles / Effets</option>
-					<option value="BLOCKQUOTE">Citation</option>
-					<option value="highlight">Surbrillance</option>
-					<option value="spoiler">Spoiler</option>
-					<option value="code">Code</option>
-				</select>
-				
+					<option value="BLOCKQUOTE">❝ Citation</option>
+					<option value="highlight">🖍️ Surbrillance</option>
+					<option value="spoiler">🤫 Spoiler</option>
+					<option value="code">💻 Code</option>
+				</select>				
 				<select id="align-tools" class="form-select form-select-sm" style="width:120px;" aria-label="Alignement du texte">
 					<option value="">Alignement</option>
 					<option value="left">Gauche</option>
@@ -67,7 +56,6 @@
 					<option value="justify">Justifié</option>
 				</select>
 				<button id="toggle-emoji-picker" type="button" class="btn btn-light btn-sm" title="Ouvrir les emojis">😊</button>
-				
 				<button type="button" class="btn btn-light btn-sm" data-command="insertVideo" title="Insérer une vidéo">🎬</button>
 				<button type="button" class="btn btn-light btn-sm" data-command="createLink" title="Créer un lien">🔗</button>
 				<button type="button" class="btn btn-light btn-sm" data-command="insertImage" title="Insérer une image">🖼️</button>
