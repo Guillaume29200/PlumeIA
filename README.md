@@ -1,6 +1,3 @@
-<center><h3>/!\ATTENTION NE PAS UTILISER POUR LE MOMENT/!\</h3></center>
-<hr />
-
 <p align="center">
   <img src="https://logo.svgcdn.com/l/mistral-ai-8x.png" width="150" alt="Mistral AI" />
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/1280px-Claude_AI_logo.svg.png" width="150" alt="Claude AI" />
